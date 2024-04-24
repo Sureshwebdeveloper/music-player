@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn-color: #c93b76;
+  --text-color: #e5e7eb;
+  --card-color: #212936;
+  --next-btn-color: #4d5562;
+  --time-color: #121826a6;
+}
+
+body {
+  background: url(./assests/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: var(--card-color);
+  height: 470px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container img {
+  height: 65%;
+  border-radius: 13px;
+  object-fit: cover;
+}
+
+.container h3 {
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 5px;
+}
+
+.container small {
+  text-align: center;
+  color: var(--next-btn-color);
+  margin: 10px auto;
+}
+
+.timer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--next-btn-color);
+}
+
+.timer > span {
+  font-size: 14px;
+}
+
+/* input[type="range"] {
+  margin-top: 10px;
+  accent-color: #c93b76;
+  height: 5px;
+  transition: accent-color 4ms ease-in;
+} */
+
+.progress-area {
+  height: 5px;
+  width: 100%;
+  background-color: var(--text-color);
+  cursor: pointer;
+  border-radius: 50px;
+}
+.progress-area .progress-bar {
+  height: inherit;
+  width: 70%;
+  border-radius: inherit;
+  background: var(--btn-color);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 25px auto;
+}
+
+.play-btn{
+    z-index: 3;
+    cursor: pointer;
+}
+
+.pause {
+  background: url("./assests/pausefill.svg");
+  background-image: center;
+}
+
